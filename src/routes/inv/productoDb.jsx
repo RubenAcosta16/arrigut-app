@@ -117,7 +117,7 @@ const productoDb = ({ docId, name, producto,precio, onDelete, onUpdate }) => {
         )}
       </div>
             
-      <div>
+      {/* <div>
         {editPrecio ? (
           <>
             <input
@@ -133,7 +133,7 @@ const productoDb = ({ docId, name, producto,precio, onDelete, onUpdate }) => {
             Precio: {currentPrecio}
           </>
         )}
-      </div>     
+      </div>      */}
 
       <div>
         <button onClick={handleDelete}>Delete</button>
