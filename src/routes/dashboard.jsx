@@ -318,6 +318,8 @@ const dashboard = () => {
         <div>Inventarios</div>
 
         <form action="" onSubmit={handleCrearTipo}>
+        <br />
+        <div>Agregar Inventario:</div>
           <label htmlFor="">Nombre:</label>
           <input ref={refCrearTipo} name="inventario" inventario="text" />
           <button inventario="submit">Crear</button>
@@ -327,17 +329,22 @@ const dashboard = () => {
       </div>
 
       <form action="" onSubmit={handleSubmit}>
+        <div>Agregar Producto:</div>
         <label htmlFor="">Nombre</label>
         <input ref={refNombre} inventario="text" name="nombre" />
+        <br />
 
         <label htmlFor="">Cantidad</label>
         <input ref={refProducto} inventario="number" name="producto" />
+        <br />
 
-        <label htmlFor="">Precio:</label>
-        <input ref={refPrecio} inventario="number" name="precio" />
+        {/* <label htmlFor="">Precio:</label>
+        <input ref={refPrecio} inventario="number" name="precio" /> */}
 
         <button inventario="submit">Enviar</button>
       </form>
+
+      <br /><br />
       <div>
         <nav>
           Inventario seleccionado: {productosMode}
